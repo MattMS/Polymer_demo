@@ -1,0 +1,28 @@
+{
+  "name": "mattms_polymer_test",
+  "authors": [
+    "Matt McKellar-Spence <matt+git@mattms.com>"
+  ],
+  "description": "Test of Polymer.",
+  "main": "index.js",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-input": "PolymerElements/iron-input#^1.0.9",
+    "marked-element": "PolymerElements/marked-element#^1.1.3",
+    "paper-button": "PolymerElements/paper-button#^1.0.11",
+    "paper-input": "PolymerElements/paper-input#^1.1.11"
+  }
+}
