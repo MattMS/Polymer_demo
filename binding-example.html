@@ -1,0 +1,23 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="binding-example">
+	<template>
+		<configurable-name-tag owner="[[owner]]"></configurable-name-tag>
+		<editable-name-tag owner="{{owner}}"></editable-name-tag>
+	</template>
+
+	<script>
+		Polymer({
+			is: "binding-example",
+			properties: {
+				// declare the owner property
+				owner: {
+					type: String,
+					value: "Matthew"
+				}
+			}
+		})
+
+		// https://www.polymer-project.org/1.0/docs/devguide/data-binding
+	</script>
+</dom-module>
