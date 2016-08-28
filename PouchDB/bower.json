@@ -1,0 +1,25 @@
+{
+  "authors": [
+    "Matt McKellar-Spence <matt+git@mattms.com>"
+  ],
+  "dependencies": {
+    "app-pouchdb": "PolymerElements/app-pouchdb#^0.9.1",
+    "iron-input": "PolymerElements/iron-input#^1.0.10"
+  },
+  "description": "Test of Polymer.",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "main": "index.html",
+  "name": "mattms_polymer_test",
+  "private": true
+}
