@@ -1,0 +1,25 @@
+{
+  "authors": [
+    "Matt McKellar-Spence <matt+git@mattms.com>"
+  ],
+  "dependencies": {
+    "marked-element": "PolymerElements/marked-element#^1.2.0"
+  },
+  "description": "Test of Polymer Marked Element.",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "marked",
+    "test"
+  ],
+  "license": "MIT",
+  "main": "index.html",
+  "name": "mattms_polymer_marked_test",
+  "private": true
+}
