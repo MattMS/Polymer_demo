@@ -2,13 +2,7 @@
   "authors": [
     "Matt McKellar-Spence <matt+git@mattms.com>"
   ],
-  "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
-    "iron-input": "PolymerElements/iron-input#^1.0.9",
-    "marked-element": "PolymerElements/marked-element#^1.1.3",
-    "paper-button": "PolymerElements/paper-button#^1.0.11",
-    "paper-input": "PolymerElements/paper-input#^1.1.11"
-  },
+  "dependencies": {},
   "description": "Test of Polymer.",
   "homepage": "",
   "ignore": [
