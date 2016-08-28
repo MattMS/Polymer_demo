@@ -1,0 +1,36 @@
+<link href="bower_components/polymer/polymer.html" rel="import">
+
+<link href="bower_components/app-pouchdb/app-pouchdb-document.html" rel="import">
+<link href="bower_components/iron-input/iron-input.html" rel="import">
+
+<dom-module id="my-pouchdb-input">
+	<template>
+		<app-pouchdb-document data="{{doc}}" db-name="[[db_name]]" doc-id="[[doc_name]]"></app-pouchdb-document>
+		<input bind-value="{{doc.name}}" is="iron-input"></input>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'my-pouchdb-input',
+			properties: {
+				db_name: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: 'my-polymer-test'
+				},
+				doc: {
+					// notify: true,
+					// reflectToAttribute: true,
+					type: Object
+				},
+				doc_name: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: 'my-doc'
+				}
+			}
+		})
+	</script>
+</dom-module>

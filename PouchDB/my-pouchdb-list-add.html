@@ -1,0 +1,55 @@
+<link href="bower_components/polymer/polymer.html" rel="import">
+
+<link href="bower_components/app-pouchdb/app-pouchdb-document.html" rel="import">
+<link href="bower_components/iron-input/iron-input.html" rel="import">
+
+<dom-module id="my-pouchdb-list-add">
+	<template>
+		<app-pouchdb-document data="{{doc}}" db-name="[[db_name]]" doc-id="[[doc_name]]"></app-pouchdb-document>
+		<input bind-value="{{value}}" is="iron-input" on-keypress="on_keypress"></input>
+	</template>
+
+	<script>
+		ENTER_KEY = 13
+
+		Polymer({
+			is: 'my-pouchdb-list-add',
+			on_keypress: function (event) {
+				if (ENTER_KEY == event.keyCode) {
+					if (this.doc.items)
+						this.push('doc.items', event.target.value)
+					else
+						this.set('doc.items', [event.target.value])
+
+					this.set('value', '')
+				}
+			},
+			properties: {
+				db_name: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: 'my-polymer-test'
+				},
+				doc: {
+					// notify: true,
+					// reflectToAttribute: true,
+					type: Object,
+					value: {items: []}
+				},
+				doc_name: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: 'my-doc'
+				},
+				value: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: ''
+				}
+			}
+		})
+	</script>
+</dom-module>

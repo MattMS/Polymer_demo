@@ -1,0 +1,40 @@
+<link href="bower_components/polymer/polymer.html" rel="import">
+
+<link href="bower_components/app-pouchdb/app-pouchdb-document.html" rel="import">
+
+<dom-module id="my-pouchdb-list">
+	<template>
+		<app-pouchdb-document data="{{doc}}" db-name="[[db_name]]" doc-id="[[doc_name]]"></app-pouchdb-document>
+		<ul>
+			<template as="item" is="dom-repeat" items="{{doc.items}}">
+				<li>[[item]]</li>
+			</template>
+		</ul>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'my-pouchdb-list',
+			properties: {
+				db_name: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: 'my-polymer-test'
+				},
+				doc: {
+					// notify: true,
+					// reflectToAttribute: true,
+					type: Object,
+					// value: {list: []}
+				},
+				doc_name: {
+					// notify: false,
+					// reflectToAttribute: true,
+					type: String,
+					value: 'my-doc'
+				}
+			}
+		})
+	</script>
+</dom-module>
