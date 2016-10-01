@@ -1,5 +1,7 @@
 # Polymer demo
 
+**Please note:** this is based on Polymer 1.0, and will be gradually updated to 2.0 once it is released properly.
+
 This repo demonstrates the creation and usage of basic Polymer Elements.
 
 
